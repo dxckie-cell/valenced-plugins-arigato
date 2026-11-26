@@ -162,7 +162,7 @@
       ],
       "icon": "AwardIcon",
       "channels": {
-        "latest": "1.1.2"
+        "latest": "1.1.3"
       },
       "versions": {
         "1.1.0": {
@@ -195,6 +195,19 @@
           "url": "https://dxckie-cell.github.io/valenced-plugins-arigato/pool/wolfie.global-badges@1.1.2.zip",
           "sha256": "d476c7a04819fc6c8ea453784addac191c44792ce4c0f1e42fcb8711f2c6c97e",
           "size": 4622,
+          "dependencies": {
+            "valenced.api": {
+              "version": ">=1 <2"
+            },
+            "discord": {
+              "version": ">=351.1"
+            }
+          }
+        },
+        "1.1.3": {
+          "url": "https://dxckie-cell.github.io/valenced-plugins-arigato/pool/wolfie.global-badges@1.1.3.zip",
+          "sha256": "0e823be3ea707e708f75418efc421478d5570468d4115af71bc3744ca5cdd2ee",
+          "size": 4681,
           "dependencies": {
             "valenced.api": {
               "version": ">=1 <2"
