@@ -1,0 +1,385 @@
+{
+  "format": 1,
+  "name": "WolfPlugs",
+  "description": "Wolfie's plugins for Valenced.",
+  "plugins": {
+    "wolfie.add-attachments": {
+      "name": "AddAttachments",
+      "description": "Upload queued attachments when saving a message edit.",
+      "author": "Wolfie <347096063569559553> (https://wolfies.org/ \"Website\") (https://github.com/Wolfkid200444 \"GitHub\")",
+      "icon": "PaperclipIcon",
+      "channels": {
+        "latest": "1.0.0"
+      },
+      "versions": {
+        "1.0.0": {
+          "url": "https://dxckie-cell.github.io/valenced-plugins-arigato/pool/wolfie.add-attachments@1.0.0.zip",
+          "sha256": "dc9d07470e31f43c96927a96fe7e2884a78ac13d9aa199dac3d93cebd0e8ab18",
+          "size": 2392,
+          "dependencies": {
+            "valenced.api": {
+              "version": ">=1 <2"
+            },
+            "discord": {
+              "version": "*"
+            }
+          }
+        }
+      }
+    },
+    "wolfie.better-devices": {
+      "name": "Better Devices",
+      "description": "Better session control: multi-select logout, new-device alerts, and clearer device details.",
+      "author": "Rosie, kmmiio99o",
+      "contributors": [
+        "Wolfie <347096063569559553> (https://wolfies.org/ \"Website\") (https://github.com/Wolfkid200444 \"GitHub\")"
+      ],
+      "icon": "LaptopPhoneIcon",
+      "channels": {
+        "latest": "1.0.0"
+      },
+      "versions": {
+        "1.0.0": {
+          "url": "https://dxckie-cell.github.io/valenced-plugins-arigato/pool/wolfie.better-devices@1.0.0.zip",
+          "sha256": "1d7ff7b761e81f29fdc3bfa4ae70c81f75a0a08de7c246faadc41d5e0f3954ac",
+          "size": 4943,
+          "dependencies": {
+            "valenced.api": {
+              "version": ">=1 <2"
+            },
+            "discord": {
+              "version": "*"
+            }
+          }
+        }
+      }
+    },
+    "wolfie.better-inbox": {
+      "name": "BetterInbox",
+      "description": "Categorizes Discord notifications into clean tabs with filters for mentions, replies, reactions, and threads.",
+      "author": "Rosie",
+      "contributors": [
+        "Wolfie <347096063569559553> (https://wolfies.org/ \"Website\") (https://github.com/Wolfkid200444 \"GitHub\")"
+      ],
+      "icon": "BellIcon",
+      "channels": {
+        "latest": "1.0.1"
+      },
+      "versions": {
+        "1.0.1": {
+          "url": "https://dxckie-cell.github.io/valenced-plugins-arigato/pool/wolfie.better-inbox@1.0.1.zip",
+          "sha256": "4b710bf023750948fc7a23edd1053e52b885abdbc15e7f7779f19033fd097d40",
+          "size": 10178,
+          "dependencies": {
+            "valenced.api": {
+              "version": ">=1 <2"
+            },
+            "discord": {
+              "version": "*"
+            }
+          }
+        }
+      }
+    },
+    "wolfie.bot-client": {
+      "name": "Bot Client",
+      "description": "Recommended to use a different client for this",
+      "author": "Wolfie <347096063569559553> (https://wolfies.org/ \"Website\") (https://github.com/Wolfkid200444 \"GitHub\")",
+      "icon": "BotIcon",
+      "channels": {
+        "latest": "1.0.1"
+      },
+      "versions": {
+        "1.0.1": {
+          "url": "https://dxckie-cell.github.io/valenced-plugins-arigato/pool/wolfie.bot-client@1.0.1.zip",
+          "sha256": "897136c45dbb22f05409cb5b25bf47514b712e687bfd5767859713ea6f71fa96",
+          "size": 14175,
+          "dependencies": {
+            "valenced.api": {
+              "version": ">=1 <2"
+            },
+            "discord": {
+              "version": "*"
+            },
+            "valenced.settings": {}
+          }
+        }
+      }
+    },
+    "wolfie.chat-ragdoll": {
+      "name": "Chat Ragdoll",
+      "description": "Shake your phone to drop chat into a pile. New messages launch the pile upward.",
+      "author": "Wolfie <347096063569559553> (https://wolfies.org/ \"Website\") (https://github.com/Wolfkid200444 \"GitHub\")",
+      "channels": {
+        "latest": "1.0.0"
+      },
+      "versions": {
+        "1.0.0": {
+          "url": "https://dxckie-cell.github.io/valenced-plugins-arigato/pool/wolfie.chat-ragdoll@1.0.0.zip",
+          "sha256": "7ef52e5a1a166bae66768101b114767ec5e2b4a9b5dcc985b518104a26aaf570",
+          "size": 25459,
+          "dependencies": {
+            "valenced.api": {
+              "version": ">=1 <2"
+            },
+            "discord": {
+              "version": ">=351.1"
+            }
+          }
+        }
+      }
+    },
+    "wolfie.gif-text": {
+      "name": "Gif Text",
+      "description": "Add GIF links or file attachments to your message draft, with configurable picker actions.",
+      "author": "Wolfie <347096063569559553> (https://wolfies.org/ \"Website\") (https://github.com/Wolfkid200444 \"GitHub\")",
+      "icon": "GifIcon",
+      "channels": {
+        "latest": "1.0.1"
+      },
+      "versions": {
+        "1.0.1": {
+          "url": "https://dxckie-cell.github.io/valenced-plugins-arigato/pool/wolfie.gif-text@1.0.1.zip",
+          "sha256": "e82b5b5ed8583225c19d8598d69cf56c7b703c5d2a807d83cedf1ca172f1ed52",
+          "size": 4348,
+          "dependencies": {
+            "valenced.api": {
+              "version": ">=1 <2"
+            },
+            "discord": {
+              "version": "*"
+            }
+          }
+        }
+      }
+    },
+    "wolfie.global-badges": {
+      "name": "Global Badges",
+      "description": "Show profile badges from other Discord clients and BadgeVault.",
+      "author": "Wolfie <347096063569559553> (https://wolfies.org/ \"Website\") (https://github.com/Wolfkid200444 \"GitHub\")",
+      "contributors": [
+        "Palm <629368283354628116> (https://github.com/sponsors/PalmDevs \"Donations\") (https://palmdevs.me \"Website\") (https://github.com/PalmDevs \"GitHub\")"
+      ],
+      "icon": "AwardIcon",
+      "channels": {
+        "latest": "1.1.0"
+      },
+      "versions": {
+        "1.1.0": {
+          "url": "https://dxckie-cell.github.io/valenced-plugins-arigato/pool/wolfie.global-badges@1.1.0.zip",
+          "sha256": "9778666e59fb614f2e2bad2d140c560d7d4808d01f4567945cf9a4fdcb200ffe",
+          "size": 4613,
+          "dependencies": {
+            "valenced.api": {
+              "version": ">=1 <2"
+            },
+            "discord": {
+              "version": ">=351.1"
+            }
+          }
+        }
+      }
+    },
+    "wolfie.media-utils": {
+      "name": "MediaUtils",
+      "description": "Rotate and zoom media, search images, crop images, and trim and crop video attachments.",
+      "author": "Wolfie <347096063569559553> (https://wolfies.org/ \"Website\") (https://github.com/Wolfkid200444 \"GitHub\")",
+      "icon": "ImageIcon",
+      "channels": {
+        "latest": "1.3.2"
+      },
+      "versions": {
+        "1.3.2": {
+          "url": "https://dxckie-cell.github.io/valenced-plugins-arigato/pool/wolfie.media-utils@1.3.2.zip",
+          "sha256": "d666d39623c494da2a0f82f1d4416d0fb2749431dbcc0b0a49a135350a7ee1b3",
+          "size": 97463,
+          "dependencies": {
+            "valenced.api": {
+              "version": ">=1 <2"
+            },
+            "discord": {
+              "version": ">=351.1"
+            }
+          }
+        }
+      }
+    },
+    "wolfie.more-alts": {
+      "name": "More Alts!",
+      "description": "Manage and switch between multiple Discord accounts, plus unlocks Discord's own native multi-account switcher.",
+      "author": "Rosie",
+      "contributors": [
+        "Wolfie <347096063569559553> (https://wolfies.org/ \"Website\") (https://github.com/Wolfkid200444 \"GitHub\")"
+      ],
+      "icon": "ic_full_server_gating_24px",
+      "channels": {
+        "latest": "1.0.0"
+      },
+      "versions": {
+        "1.0.0": {
+          "url": "https://dxckie-cell.github.io/valenced-plugins-arigato/pool/wolfie.more-alts@1.0.0.zip",
+          "sha256": "2ece413d03db119d208e199335fe2c79a740564d061b81bf22f6ee8b50ccc722",
+          "size": 13328,
+          "dependencies": {
+            "valenced.api": {
+              "version": ">=1 <2"
+            },
+            "discord": {
+              "version": "*"
+            }
+          }
+        }
+      }
+    },
+    "wolfie.nsfw-blur": {
+      "name": "NSFW Blur",
+      "description": "Blur images and videos in NSFW channels until you tap to reveal them.",
+      "author": "Wolfie <347096063569559553> (https://wolfies.org/ \"Website\") (https://github.com/Wolfkid200444 \"GitHub\")",
+      "icon": "SpoilerIcon",
+      "channels": {
+        "latest": "1.0.0"
+      },
+      "versions": {
+        "1.0.0": {
+          "url": "https://dxckie-cell.github.io/valenced-plugins-arigato/pool/wolfie.nsfw-blur@1.0.0.zip",
+          "sha256": "5aaae9294d6ae252c3aaca02748502d86dd4a89a3626485d9d429b1b12037d31",
+          "size": 23157,
+          "dependencies": {
+            "valenced.api": {
+              "version": ">=1 <2"
+            },
+            "discord": {
+              "version": ">=351.1"
+            }
+          }
+        }
+      }
+    },
+    "wolfie.petpet": {
+      "name": "PetPet",
+      "description": "Generate PetPet GIFs locally with /petpet user and attach them to your message draft.",
+      "author": "Wolfie <347096063569559553> (https://wolfies.org/ \"Website\") (https://github.com/Wolfkid200444 \"GitHub\")",
+      "icon": "GifIcon",
+      "channels": {
+        "latest": "1.0.0"
+      },
+      "versions": {
+        "1.0.0": {
+          "url": "https://dxckie-cell.github.io/valenced-plugins-arigato/pool/wolfie.petpet@1.0.0.zip",
+          "sha256": "f75688e85aea2963ee3203da210c22e7053079b98d40f307b88f7c82aacc45e7",
+          "size": 60320,
+          "dependencies": {
+            "valenced.api": {
+              "version": ">=1 <2"
+            },
+            "discord": {
+              "version": "*"
+            }
+          }
+        }
+      }
+    },
+    "wolfie.questify": {
+      "name": "Questify",
+      "description": "Browse Discord quests, track progress, and auto-complete supported quests from their menus.",
+      "author": "Wolfie <347096063569559553> (https://wolfies.org/ \"Website\") (https://github.com/Wolfkid200444 \"GitHub\")",
+      "contributors": [
+        "dxckiee <772390964471791630>"
+      ],
+      "icon": "QuestsIcon",
+      "channels": {
+        "latest": "1.0.3"
+      },
+      "versions": {
+        "1.0.3": {
+          "url": "https://dxckie-cell.github.io/valenced-plugins-arigato/pool/wolfie.questify@1.0.3.zip",
+          "sha256": "e38eacf53dcca931f2ccc179f0f11600ddfa543c6b7a9153fe819e6c89e24196",
+          "size": 21671,
+          "dependencies": {
+            "valenced.api": {
+              "version": ">=1 <2"
+            },
+            "discord": {
+              "version": "*"
+            }
+          }
+        }
+      }
+    },
+    "wolfie.server-info": {
+      "name": "Server Info",
+      "description": "View server information from the guild context menu.",
+      "author": "Rosie, kmmiio99o",
+      "contributors": [
+        "Wolfie <347096063569559553> (https://wolfies.org/ \"Website\") (https://github.com/Wolfkid200444 \"GitHub\")"
+      ],
+      "icon": "CircleInformationIcon",
+      "channels": {
+        "latest": "1.0.0"
+      },
+      "versions": {
+        "1.0.0": {
+          "url": "https://dxckie-cell.github.io/valenced-plugins-arigato/pool/wolfie.server-info@1.0.0.zip",
+          "sha256": "dbc98ad4d6c7d6ebfcf2d36c72b769e571572c458250c46c47d115ed8ad65043",
+          "size": 4822,
+          "dependencies": {
+            "valenced.api": {
+              "version": ">=1 <2"
+            },
+            "discord": {
+              "version": "*"
+            }
+          }
+        }
+      }
+    },
+    "wolfie.sound-controls": {
+      "name": "Sound Controls",
+      "description": "Mute individual call effects, ringtones, and in-app notification sounds.",
+      "author": "Wolfie <347096063569559553> (https://wolfies.org/ \"Website\") (https://github.com/Wolfkid200444 \"GitHub\")",
+      "icon": "SoundboardSlashIcon",
+      "channels": {
+        "latest": "1.0.0"
+      },
+      "versions": {
+        "1.0.0": {
+          "url": "https://dxckie-cell.github.io/valenced-plugins-arigato/pool/wolfie.sound-controls@1.0.0.zip",
+          "sha256": "2e1b60bfbbebca49295de5c7b0eb1d23560c3f79d8fdce12d6dbbb3a2ce55a86",
+          "size": 2458,
+          "dependencies": {
+            "valenced.api": {
+              "version": ">=1 <2"
+            },
+            "discord": {
+              "version": "*"
+            }
+          }
+        }
+      }
+    },
+    "wolfie.toylink": {
+      "name": "ToyLink",
+      "description": "Connect Lovense or Intiface / Buttplug toys and trigger vibration from Discord messages, incoming calls, and notification sounds.",
+      "author": "Wolfie <347096063569559553> (https://wolfies.org/ \"Website\") (https://github.com/Wolfkid200444 \"GitHub\")",
+      "icon": "NotificationsIcon",
+      "channels": {
+        "latest": "1.0.0"
+      },
+      "versions": {
+        "1.0.0": {
+          "url": "https://dxckie-cell.github.io/valenced-plugins-arigato/pool/wolfie.toylink@1.0.0.zip",
+          "sha256": "1e5f52e006ba502dcb0cbdfc045b971537cda0aaa9a724efce3d949cce7492bb",
+          "size": 6291,
+          "dependencies": {
+            "valenced.api": {
+              "version": ">=1 <2"
+            },
+            "discord": {
+              "version": "*"
+            }
+          }
+        }
+      }
+    }
+  }
+}
