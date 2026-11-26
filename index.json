@@ -162,13 +162,26 @@
       ],
       "icon": "AwardIcon",
       "channels": {
-        "latest": "1.1.0"
+        "latest": "1.1.1"
       },
       "versions": {
         "1.1.0": {
           "url": "https://dxckie-cell.github.io/valenced-plugins-arigato/pool/wolfie.global-badges@1.1.0.zip",
           "sha256": "9778666e59fb614f2e2bad2d140c560d7d4808d01f4567945cf9a4fdcb200ffe",
           "size": 4613,
+          "dependencies": {
+            "valenced.api": {
+              "version": ">=1 <2"
+            },
+            "discord": {
+              "version": ">=351.1"
+            }
+          }
+        },
+        "1.1.1": {
+          "url": "https://dxckie-cell.github.io/valenced-plugins-arigato/pool/wolfie.global-badges@1.1.1.zip",
+          "sha256": "96af522af0c327c2aa31930cfa65a9a859ba599b2fd296f6a92d14808881aaf2",
+          "size": 4618,
           "dependencies": {
             "valenced.api": {
               "version": ">=1 <2"
