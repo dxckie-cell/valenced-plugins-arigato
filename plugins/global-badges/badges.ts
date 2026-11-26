@@ -19,10 +19,8 @@ export const Providers = {
 }
 
 export type ModStyle = 'none' | 'prefix' | 'suffix'
-export type Animation = 'all' | 'few' | 'none'
+export type Animation = 'all' | 'none'
 
-// With 'few', this many animated badges per profile still play
-const FewAnimated = 3
 const AnimatedUrl = /\.(gif|apng)(\?|#|$)|[?&]animated=true/i
 
 // Animated images play at full speed in a native image view, and a profile
@@ -122,7 +120,6 @@ export function createBadgeStore() {
 				!badge.id.startsWith('gb-'),
 		)
 		const badges = []
-		let animated = 0
 		for (const badge of users.get(userId) ?? []) {
 			const provider = Object.entries(Providers).find(
 				([key]) => key === badge.mod,
@@ -141,10 +138,8 @@ export function createBadgeStore() {
 						: badge.tooltip
 			const id = `gb-${userId}-${encodeURIComponent(`${badge.mod}:${badge.badge}`)}`
 			let uri = badge.badge
-			if (settings.animation !== 'all' && AnimatedUrl.test(uri)) {
-				if (settings.animation === 'none' || ++animated > FewAnimated)
-					uri = stillUrl(uri)
-			}
+			if (settings.animation === 'none' && AnimatedUrl.test(uri))
+				uri = stillUrl(uri)
 			props.set(id, {
 				id,
 				userId,

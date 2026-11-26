@@ -110,10 +110,7 @@ export default plugin<{ jsonStorage: Settings }>({
 					value?.showModStyle === 'prefix' || value?.showModStyle === 'suffix'
 						? value.showModStyle
 						: 'none',
-				animation:
-					value?.animation === 'few' || value?.animation === 'none'
-						? value.animation
-						: 'all',
+				animation: value?.animation === 'none' ? 'none' : 'all',
 				providers: value?.providers ?? {},
 			})
 		}
