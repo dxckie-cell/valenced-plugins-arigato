@@ -4,7 +4,7 @@ import { Linking, ScrollView } from 'react-native'
 import { DefaultSettings, Providers } from './badges'
 import type { PluginSettingsComponent } from '@valenced/plugins/types'
 import type { ComponentProps } from 'react'
-import type { ModStyle, Settings } from './badges'
+import type { Animation, ModStyle, Settings } from './badges'
 
 const {
 	TableRow,
@@ -57,6 +57,19 @@ export default function SettingsComponent({
 					<TableRadioRow value="none" label="Hide client names" />
 					<TableRadioRow value="prefix" label="Show before badge name" />
 					<TableRadioRow value="suffix" label="Show after badge name" />
+				</TableRadioGroup>
+				<TableRadioGroup
+					title="Animated badges"
+					defaultValue={settings.animation ?? 'all'}
+					onChange={(animation: Animation) => storage.set({ animation })}
+				>
+					<TableRadioRow value="all" label="Animate all" />
+					<TableRadioRow
+						value="few"
+						label="Animate the first 3 only"
+						subLabel="Others show a still image, so profiles with many animated badges stay smooth."
+					/>
+					<TableRadioRow value="none" label="Still images only" />
 				</TableRadioGroup>
 				<TableRowGroup title="Badge providers">
 					{Object.entries(Providers).map(([provider, label]) => (

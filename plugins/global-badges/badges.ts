@@ -19,6 +19,18 @@ export const Providers = {
 }
 
 export type ModStyle = 'none' | 'prefix' | 'suffix'
+export type Animation = 'all' | 'few' | 'none'
+
+// With 'few', this many animated badges per profile still play
+const FewAnimated = 3
+const AnimatedUrl = /\.(gif|apng)(\?|#|$)|[?&]animated=true/i
+
+// Animated images play at full speed in a native image view, and a profile
+// full of them is slow. A still of the first frame, scaled to badge size, is
+// what a limited profile loads instead
+function stillUrl(url: string) {
+	return `https://wsrv.nl/?url=${encodeURIComponent(url)}&output=png&w=64`
+}
 
 export interface Settings {
 	left: boolean
@@ -27,6 +39,7 @@ export interface Settings {
 	updateOnMetered?: boolean
 	lastFetched?: number
 	showModStyle: ModStyle
+	animation: Animation
 	providers: Partial<Record<keyof typeof Providers, boolean>>
 }
 
@@ -35,6 +48,7 @@ export const DefaultSettings: Settings = {
 	showAll: false,
 	badgeOrder: {},
 	showModStyle: 'none',
+	animation: 'all',
 	providers: {},
 }
 
@@ -118,6 +132,7 @@ export function createBadgeStore() {
 					!badge.id.startsWith('gb-'),
 			)
 			const badges = []
+			let animated = 0
 			for (const badge of users.get(userId) ?? []) {
 				const provider = Object.entries(Providers).find(
 					([key]) => key === badge.mod,
@@ -135,12 +150,17 @@ export function createBadgeStore() {
 							? `${badge.tooltip} - ${name}`
 							: badge.tooltip
 				const id = `gb-${userId}-${encodeURIComponent(`${badge.mod}:${badge.badge}`)}`
-				props.set(id, { id, userId, source: { uri: badge.badge }, label })
+				let uri = badge.badge
+				if (settings.animation !== 'all' && AnimatedUrl.test(uri)) {
+					if (settings.animation === 'none' || ++animated > FewAnimated)
+						uri = stillUrl(uri)
+				}
+				props.set(id, { id, userId, source: { uri }, label })
 				badges.push({
 					id,
 					description: label,
 					icon: 'dummy',
-					iconSrc: badge.badge,
+					iconSrc: uri,
 				})
 			}
 			if (!badges.length)

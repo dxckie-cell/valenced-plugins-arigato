@@ -112,6 +112,10 @@ export default plugin<{ jsonStorage: Settings }>({
 					value?.showModStyle === 'prefix' || value?.showModStyle === 'suffix'
 						? value.showModStyle
 						: 'none',
+				animation:
+					value?.animation === 'few' || value?.animation === 'none'
+						? value.animation
+						: 'all',
 				providers: value?.providers ?? {},
 			})
 		}
