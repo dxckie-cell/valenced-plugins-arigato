@@ -61,6 +61,8 @@ export interface Badge {
 export interface BadgeProps {
 	id: string
 	source: { uri: string }
+	// The badge as published, animated. The badges screen shows this one
+	original: string
 	label: string
 	userId: string
 }
@@ -155,7 +157,13 @@ export function createBadgeStore() {
 					if (settings.animation === 'none' || ++animated > FewAnimated)
 						uri = stillUrl(uri)
 				}
-				props.set(id, { id, userId, source: { uri }, label })
+				props.set(id, {
+					id,
+					userId,
+					source: { uri },
+					original: badge.badge,
+					label,
+				})
 				badges.push({
 					id,
 					description: label,
